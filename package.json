@@ -59,7 +59,8 @@
     "total.js": "2.1.x",
     "unzip": "^0.1.11",
     "xml-writer": ">=1.4.1",
-    "xml2js": "latest"
+    "xml2js": "latest",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.0",
@@ -77,5 +78,10 @@
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^2.0.0",
     "prettify": "^0.1.7"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
